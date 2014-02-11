@@ -1,0 +1,7 @@
+parameters:
+#    zlabmopa1.example.class: Zlab\mopa1Bundle\Example
+
+services:
+#    zlabmopa1.example:
+#        class: %zlabmopa1.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

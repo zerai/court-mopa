@@ -1,0 +1,3 @@
+zlabmopa1_homepage:
+    pattern:  /
+    defaults: { _controller: Zlabmopa1Bundle:Default:index }

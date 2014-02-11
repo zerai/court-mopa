@@ -1,0 +1,4 @@
+zlabmopa1:
+    resource: "@Zlabmopa1Bundle/Resources/config/routing.yml"
+    prefix:   /
+
