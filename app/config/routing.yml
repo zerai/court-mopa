@@ -1,0 +1,4 @@
+zlab_mopa_css:
+    resource: "@ZlabMopaCssBundle/Resources/config/routing.xml"
+    prefix:   /
+
