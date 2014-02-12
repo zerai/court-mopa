@@ -8,6 +8,16 @@ DirectoryIndex app.php
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+
+    #RewriteEngine On
+    #RewriteCond %{HTTP_HOST} ^www.MioDominio.com$
+    #RewriteCond %{REQUEST_URI} ^/fonts/
+    #RewriteRule ^(.*)$ app.php/$1
+    #RewriteBase /
+    #RewriteRule ^app_dev.php/fonts/([a-zA-Z_]+)$ app.php/fonts/$1 [L]
+    #Redirect ^app_dev.php/fonts/(.*)$ /app.php/fonts/$1 [L]
+    #RewriteRule ^app_dev\.php/fonts/([a-zA-Z_]+)$ /app.php/fonts/$1 [L]
+
     # Determine the RewriteBase automatically and set it as environment variable.
     # If you are using Apache aliases to do mass virtual hosting or installed the
     # project in a subdirectory, the base path will be prepended to allow proper

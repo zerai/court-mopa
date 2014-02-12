@@ -1,12 +1,9 @@
-{% extends  '::layout.html.twig' %}
+{#% extends  '::layout.html.twig' %#}
+{% extends  '::layoutMopaTest.html.twig' %}
+
 {% block content %}
 	test<hr>
-	{{ icon('pencil') }}<hr>
-	{{ mopa_bootstrap_icon('pencil') }}<hr>
-	
-	{{ icon('home') }}<hr>
-	{{ mopa_bootstrap_icon('star') }}<hr>
-
-	<span class="glyphicon-class">glyphicon glyphicon-user</span>
+	{{icon('home')}} <hr>
+	<span class="glyphicon glyphicon-user"></span>
 {% endblock  %}
 

@@ -1,0 +1,30 @@
+{% extends 'MopaBootstrapBundle::base_initializr.html.twig' %}
+
+{% block title %} AAA {% endblock %}
+
+
+{% block head_style %}
+    {% stylesheets
+    '@MopaBootstrapBundle/Resources/public/less/mopabootstrapbundle.less'    
+    %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen"/>
+    {% endstylesheets %}
+{% endblock head_style %}
+
+{% block headline %}LayoutMopaTest{% endblock %}
+
+
+
+{% block content %}
+{% endblock  content%}
+
+{% block footer %}{% endblock %}
+
+{#% block foot_script %}
+    {% javascripts
+        '@MopaBootstrapBundle/Resources/public/js/*.js'
+
+    %}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock foot_script %#}
