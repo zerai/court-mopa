@@ -4,10 +4,12 @@
 
 
 {% block head_style %}
-    {% stylesheets
+    {% stylesheets output="css/pippo.css"
     '@MopaBootstrapBundle/Resources/public/less/mopabootstrapbundle.less'    
     %}
     <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="screen"/>
+    
+    <link href="{{ asset('css/pippo.css') }}" type="text/css" rel="stylesheet" />
     {% endstylesheets %}
 {% endblock head_style %}
 
